@@ -1,24 +1,27 @@
+// In this program I have calculated area of different shapes (particularly Square and Circle) 
+
+
 import java.util.*;
 
-class Square {
+class Square {			// Creating Square class
 
-	int sqArea;
+	int sqArea;		// Defining variable
 
-	void setArea(int side) {
+	void setArea(int side) {	// function to calculate the area of Square 
 		sqArea = side * side;
 	}
 
-	void getArea() {
+	void getArea() {		
 		System.out.println("The Area of Square is : " + sqArea);
 	}
 
 }
 
-class Circle {
+class Circle {			// Creating Circle class
 
 	double CrArea;
 
-	void setArea(double radius) {
+	void setArea(double radius) {			// function to calculate the area of Circle 
 		CrArea = 3.141 * radius * radius;
 	}
 
@@ -31,13 +34,13 @@ class Circle {
 public class Geometry {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the side of the Square : ");
 
 		int side = sc.nextInt();
 
-		Square sq = new Square();
+		Square sq = new Square(); 		//creating object of Square class
 		sq.setArea(side);
 		sq.getArea();
 
@@ -45,7 +48,7 @@ public class Geometry {
 
 		int raduis = sc.nextInt();
 
-		Circle cr = new Circle();
+		Circle cr = new Circle();		//creating object of Circle class
 		cr.setArea(raduis);
 		cr.getArea();
 
