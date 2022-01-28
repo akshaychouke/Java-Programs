@@ -1,18 +1,23 @@
-import java.util.*;
+// Here in this program you will find the calculation for simple petrol pump.
+//Here the consumer will be asked whether he wants the petrol based on amount or quantity.
+//Lets Start the program.
+
+
+import java.util.*;	
 
 class Pump {
-	float price;
+	float price;			
 	double amount, quantity;
 
-	void setPirce(float p) {
+	void setPirce(float p) {		// Setting the price of petrol
 		price = p;
 	}
 
-	void getPrice() {
+	void getPrice() {						// printing the price of petrol
 		System.out.println("The price of Petrol is : " + price);
 	}
 
-	Pump() {
+	Pump() {				//creating the constructor to initialize the amount and quantity
 		amount = 0.0;
 		quantity = 0.0;
 
@@ -20,7 +25,7 @@ class Pump {
 		System.out.println("The Quantity is : " + quantity);
 	}
 
-	void enterAmount() {
+	void enterAmount() {					// Taking amount as input 
 		System.out.println("Enter amount >10 : \n");
 		Scanner sc = new Scanner(System.in);
 		amount = sc.nextDouble();
@@ -29,7 +34,7 @@ class Pump {
 		System.out.println("Your Bill is  : " + amount + " rupee");
 	}
 
-	void enterQuantity() {
+	void enterQuantity() {					// Taking quantity as input
 		System.out.println("Enter Quantity in Litres: ");
 		Scanner sc = new Scanner(System.in);
 		quantity = sc.nextDouble();
@@ -44,20 +49,20 @@ public class PetrolPump1 {
 	public static void main(String[] args) {
 		String choice;
 
-		Pump p1 = new Pump();
+		Pump p1 = new Pump(); 		// creating object for pump class
 		p1.setPirce(90);
 		p1.getPrice();
 
-		System.out.println("Enter q for  Quantity or a for Amount ");
+		System.out.println("Enter q for  Quantity or a for Amount ");   // asking the user for his choice
 		Scanner sc = new Scanner(System.in);
 		choice = sc.nextLine();
 
 		switch (choice) {
 		case "q":
-			p1.enterQuantity();
+			p1.enterQuantity();  		// calling the enterQuantity method 
 			break;
 		case "a":
-			p1.enterAmount();
+			p1.enterAmount();		// calling the enterAmount method 
 			break;
 		default:
 			System.out.println("Invalid Choice");
