@@ -1,3 +1,7 @@
+/* Problem Statement - Write a program to create a class named shape. In this class we have three sub classes 
+circle, triangle and square each class has two member functionnamed draw () and erase 
+(). Create these using polymorphism concepts */
+
 class Shape{
 	 public void draw() {
 		 System.out.println("I am Draw Method of Shape");
