@@ -1,4 +1,8 @@
-// Lab 2 Answer
+// Problem Statment - One interesting application of computers is to display graphs and bar charts.
+//Write an application that reads five numbers between 1 and 30. For each number that is read, 
+//your program should display the same number of adjacent asterisks. For example, if 
+//your program reads the number 7, it should display *******. Display the bars of 
+//asterisks after your read all five numbers.
 
 import java.util.*;
 
