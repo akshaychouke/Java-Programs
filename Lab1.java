@@ -1,4 +1,4 @@
-// Lab Q,1 Answer 
+// Problem Statement -  Write an application that displays a box, an oval, an arrow and a diamond using asterisks(*)
 
 import java.util.*;
 import java.io.*;
